@@ -2,6 +2,10 @@
 const Vue = require('vue')
 
 const VcCervejarias = require('./components/cervejarias/lista.vue')
+
+const DaPosts = require('./components/posts/lista.vue')
+
+
 Vue.use(require('vue-resource'))
 
 
@@ -11,7 +15,7 @@ require('bootstrap')
 
 new Vue({
   components: {
-    VcCervejarias:VcCervejarias
+    DaPosts: DaPosts
   },
   el: 'body'
 })
